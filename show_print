@@ -1,0 +1,24 @@
+#include "stdafx.h"
+#include <windows.h>
+#include <stdio.h>
+
+int showprint(char *string, int time){
+	int i = 0;
+
+	while(string[i] != '\0'){
+		printf("%c",string[i]);
+		Sleep(time);
+		i++;
+	}
+
+	return 0;
+}
+
+int main(){
+
+	showprint("This is a nice day!",50);
+	printf("\n");
+	Sleep(200);
+
+	return 0;
+}
